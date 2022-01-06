@@ -1,0 +1,371 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#main{
+height: 46.5px ;
+background-color: #000 ;
+
+}
+
+#header{
+height: 48px ;
+background-color: #000;
+position: fixed ;
+top: 0 ;
+left: 0;
+right: 0;
+z-index: 1;
+}
+#slider{
+position: relative ;
+margin-top: 46.5px;
+padding-top: 50%;
+}
+#slider .text-content{
+position: absolute ; 
+left: 50% ;
+bottom: 47px ;
+color: white ;
+transform: translateX(-50%);
+text-align: center;
+}
+
+.row{
+    margin-left: -8px ;
+    margin-right: -8px ;
+    display: inline-flex ;
+}
+.col{
+    float: left;
+    padding-left: 8px ;
+    padding: 8px ;
+    padding-right: 8px ;
+    display: inline ;
+}
+.col-half{
+    width: 50% ;
+  
+   
+}
+.col-full{
+    width: 100% ;
+  
+}
+.col-thirdh{
+    width: 33.333333% ;
+}
+.text-contents{
+    padding-bottom: 15px;
+}
+.text2{
+    font-size: 18px ;
+}
+
+#nav{
+    display: inline-block;
+}
+#nav > li {
+display: inline-block;
+}
+#nav li {
+     position: relative ;
+}
+#nav .subnav{
+   display: none ;
+   position: absolute ;
+   background-color: white ;
+   color: white ;
+}
+#nav > li > a{
+    color: white ;
+}
+#nav li a {
+    text-decoration: none ;
+    font-size: large ;
+    line-height: 46.5px ;
+    padding: 0 35px ;
+    display: inline-block ;
+}
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#nav  li:hover  .subnav {
+    display: block ;
+}
+#nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+}
+#nav .subnav a{
+    padding: 0 29px ;
+    color: black ;
+    line-height: 30.5px ;
+}
+#nav .subnav li:hover  {
+    color: #000;
+    background-color: #ccc;
+}
+#nav li a{
+    display: block ;
+}
+#nav .subnav {
+    list-style-type: none;
+}
+#nav subnav a {
+align-items: center;
+justify-content: center;
+}
+
+#nav .ti-angle-down{
+    font-size: 12px ;
+    justify-items: center ;
+
+}
+#header .search{
+    color: white ;
+    font-size: 25px ;
+    float: right;
+    line-height: 46.5px ;
+    padding: 0 25px ;
+    cursor: pointer;
+}
+#header .search:hover{
+    background-color: red ;
+
+}
+#content .content-section{
+    padding: 64px 0;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content .section-heading{
+    text-align: center;
+    font-size: 30px ;
+    font-weight: 400 ;
+    letter-spacing: 4px ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#content .section-sub-heading{
+    text-align: center ;
+    font-size: 15px ;
+    margin-top: 25px ;
+    font-style: italic ;
+    opacity: 60% ;
+    margin-bottom: 20px ;
+}
+#content .about-text{
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify ;
+    line-height: 1.4 ;
+}
+#content .member-list{
+    margin-top: 48px ;
+    overflow: hidden ;
+}
+#content .member-items{
+    float: left ;
+    width: 33.33333% ;
+    text-align: center;
+    
+    
+}
+#content .member-names{
+    font-size: 15px ; 
+
+}
+#content .member-jpg{
+    width: 154px;
+    margin-top: 15px ;
+    border-radius: 4px ;
+}
+.clear{
+    clear: both ;
+}
+.tour-section{
+    background-color: #000 ;
+    color: white ; 
+   
+}
+.ticket-list{
+    background-color: #fff ;
+    margin-top: 39px ;
+    color: black ;
+    list-style : none ;
+}
+.ticket-list li{
+    color: #757575 ;
+    font-size: 15px ;
+    padding: 11px 16px ;
+    border: 1px solid #ddd ;
+}
+.ticket-list .soldout{
+    background-color: orangered ;
+    color: white ;
+    padding: 3px 4px ;
+    margin-left: 16px ;
+}
+.ticket-list .quantity{
+    background-color: #000 ;
+    float: right ;
+    width: 24px;
+    height: 24px ;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center ;
+    line-height: 24px ;
+    margin-top: -3px ;
+}
+.place-list{
+    margin-top : 32px  ;
+    margin-bottom: 40px ;
+}
+.play-items{
+    float: left ;
+    width: 31.3%;
+    padding: 0 8px ;
+}
+.play-img{
+    width: 100% ;
+    display: block ;
+}
+.play-img:hover {
+    opacity: 0.6 ;
+}
+.place-content{
+    background-color: #fff ;
+    color: #000 ;
+    padding: 16px ;
+    font-size: 15px ;
+    font-weight: 500 ;
+}
+.place-heading{
+    font-size: 15px ;
+}
+.plsy-time{
+margin-top: 15px ;
+font-weight: 500 ;
+color: #757575 ;
+}
+.play-des{
+    margin-top: 15px ;
+    margin-bottom: 25px ;
+}
+.play-buys-btn{
+    background-color: #000;
+    padding: 9px ;
+    color: white ;
+    text-decoration: none ;
+    display: inline-block ;
+}
+.play-buys-btn:hover{
+    opacity: 0.2;
+    cursor: pointer;
+}
+.modal.open{
+    display: flex ;
+}
+.modal-container {
+    background: #fff;
+    width: 900px ;
+    max-width: calc(100%-32px);
+    min-height: 200px ;
+    position: relative;
+    animation: modalFadeIn ease.5s ;
+}
+@keyframes modalFadeIn{
+    from{
+transform: translateY(-100px);
+    }
+    to{
+transform: translateY(0);
+    }
+}
+.contact-content{
+    margin-top: 48px ;
+}
+.form{
+    display: inline-block ; 
+    
+    padding-left: 180px ;
+    
+}
+
+
+.contact-info{
+    width: 500px ;
+    font-size: 18px ;
+    line-height: 1.4 ;
+    padding-right: 90px ;
+    display: inline-block ;
+}
+.contact-form .form-control{
+    width: 100% ;
+    padding: 10px 10px ;
+    display: block;
+    margin-left: 80px ;
+    
+}
+.send{
+    margin-left: 443px ;
+    display: inline-block;
+    position: relative ;
+    width: 70px  ;
+    height: 40px ;
+    background-color: #000;
+    color: #fff;
+    font-size: large;
+    padding: 6px 8px ;
+    
+}
+.name {
+    padding-right: 50px ;
+    width: 150px ;
+}
+.email{
+    width: 200px ;
+
+}
+.mess{
+    width: 409px ;
+    padding-bottom: 20px;
+}
+.ti-email{
+    width: 100%;
+}
+.send:hover{
+    background-color: #757575;
+    cursor: pointer;
+}
+i{
+    display: inline ;
+}
+.map-section {
+    width: 100% ;
+    margin-top: 10px ;
+
+}
+#footer{
+padding: 80px 16px  ;
+text-align: center;
+}
+#footer .socials-list{
+font-size: 20px ;
+}
+#footer .socials-list a{
+    color: black ;
+    text-decoration: none ;
+}
+.copyright a{
+    color: #757575 ;
+}
+#footer .socials-list a:hover{
+    opacity: 0.6 ;
+}
+.place-list img {
+    height: 158px ;
+  }
