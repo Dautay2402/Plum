@@ -23,7 +23,7 @@ z-index: 1;
 position: relative ;
 margin-top: 46.5px;
 padding-top: 50%;
-width: 100% ;
+min-width: 100% ;
 }
 
 row{
