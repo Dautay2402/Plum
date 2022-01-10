@@ -18,12 +18,14 @@ top: 0 ;
 left: 0;
 right: 0;
 z-index: 1;
+overflow:  hidden ;
 }
 #slider{
 position: relative ;
-background: url('/assets/img/UI/85026753_2723500131075843_7801141540029464576_n.png') top center / cover no-repeat;
+background: url('/assets/img/UI/85026753_2723500131075843_7801141540029464576_n.png') top center / cover no-repeat ;
 margin-top: 46.5px;
 padding-top: 50%;
+max-width: 100% ;
 }
 #slider .text-content{
 position: absolute ; 
@@ -58,7 +60,7 @@ text-align: center;
 .col-thirdh{
     width: 33.333333% ;
 }
-.text-contents{
+.text-content{
     padding-bottom: 15px;
 }
 .text2{
@@ -348,11 +350,12 @@ i{
 .map-section {
     width: 100% ;
     margin-top: 10px ;
-
+    max-width: 100% ;
 }
 #footer{
 padding: 80px 16px  ;
 text-align: center;
+max-width: 100% ;
 }
 #footer .socials-list{
 font-size: 20px ;
