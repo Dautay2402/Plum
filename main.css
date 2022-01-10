@@ -347,6 +347,7 @@ i{
 #footer{
 padding: 80px 16px  ;
 text-align: center;
+max-width: 100% ;
 }
 #footer .socials-list{
 font-size: 20px ;
