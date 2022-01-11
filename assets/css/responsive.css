@@ -4,6 +4,7 @@
         width: 100% ;
         align-items: center;
         justify-items: center;
+        /* padding-left: 20px ; */
     }
     #nav > li {
         display: block ;
@@ -32,5 +33,9 @@
         }
         .form{
             display: none;
+        }
+        #slider{
+            max-width: 100%;
+            
         }
     }
