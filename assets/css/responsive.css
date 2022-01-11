@@ -1,5 +1,10 @@
 /* Mobile */
 @media (max-width: 740px){
+    .s-col-full{
+        width: 81% ;
+        align-items: center;
+        
+    }
     #nav > li {
         display: block ;
     }
@@ -9,4 +14,20 @@
     #header{
         overflow: hidden ;
         }
-}
+        #nav .subnav{
+            position: initial ;
+            background-color: #333 ;
+            
+        }
+        #nav .subnav a{
+            color: white ;
+            padding: 5px  41px ;
+        }
+        #content .member-item{
+            margin-top: 30px;
+            width: 100%;
+        }
+        #content .member-img{
+            width: 80% ;
+        }
+    }
