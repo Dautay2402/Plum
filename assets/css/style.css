@@ -151,13 +151,15 @@ justify-content: center;
     width: 800px;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100% ;
 }
 #content .section-heading{
     text-align: center;
     font-size: 30px ;
     font-weight: 400 ;
     letter-spacing: 4px ;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    max-width: 100% ;
 }
 #content .section-sub-heading{
     text-align: center ;
@@ -166,12 +168,14 @@ justify-content: center;
     font-style: italic ;
     opacity: 60% ;
     margin-bottom: 20px ;
+    max-width: 100% ;
 }
 #content .about-text{
     font-size: 15px;
     margin-top: 25px;
     text-align: justify ;
     line-height: 1.4 ;
+    max-width: 100% ;
 }
 #content .member-list{
     margin-top: 48px ;
@@ -231,7 +235,7 @@ justify-content: center;
     margin-top: -3px ;
 }
 .place-list{
-    margin-top : 32px  ;
+    margin-top : 16px  ;
     margin-bottom: 40px ;
 }
 .play-items{
