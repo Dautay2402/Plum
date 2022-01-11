@@ -30,14 +30,18 @@
     </ul>
     </li>
 </ul>
-<div class="search">
-    <i class="ti-search"></i>
+<div  class="search">
+    <i class="search-icon ti-search"></i>
 </div>
+
+<div id="mobile-menu" class="mobile-menu-btn">
+    <i class="menu-icon ti-menu"></i>
+</div>
+
   </div>
 <div id="slider">
 <iv class="text-content"> 
-    <img src="./assets/img/UI/85026753_2723500131075843_7801141540029464576_n.png"> 
-<div class="text2">University of Information Technology</div>
+    <img src="./assets/img/UI/85026753_2723500131075843_7801141540029464576_n.png">
 </iv>
 </div>
 <div id="content">
@@ -177,5 +181,32 @@
 </div>   
     </div>
 </div>
+<script>
+    var header = document.getElementById('header');
+var menuMobile = document.getElementById('mobile-menu');
+var headerHeight = header.clientHeight;
+// Đóng mở menu mobile 
+menuMobile.onclick = function() {
+        var isClose = header.clientHeight === headerHeight
+        if (isClose) {
+            // đây là thêm css vào dòng code HTML (css inline nên được ưu tiên)
+            header.style.height = "auto";
+        } else {
+            // có thể dùng 2 cách như dưới, đa số xài null
+            // header.style.height = "46px";
+            header.style.height = null;
+        }
+    }
+    // Tự động đóng khi chọn Menu
+var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+    // Sử dụng vòng lặp for
+for (var i = 0; i < menuItems.length; i++) {
+    var menuItem = menuItems[i];
+    menuItem.onclick = function() {
+        header.style.height = null;
+    }
+}
+
+</script>
 </body>
 </html>
