@@ -5,6 +5,7 @@
         align-items: center;
         justify-items: center;
         margin-left: 40px;
+        padding-left: 20px;
     }
     #nav > li {
         display: block ;
