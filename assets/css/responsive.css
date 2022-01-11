@@ -4,6 +4,7 @@
         width: 100% ;
         align-items: center;
         justify-items: center;
+        margin-left: 10px;
     }
     #nav > li {
         display: block ;
