@@ -3,7 +3,7 @@
     .s-col-full{
         width: 81% ;
         align-items: center;
-        margin-left: auto;
+        margin-left: 10px;
         margin-right: auto;
     }
     #nav > li {
