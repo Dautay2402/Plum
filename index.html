@@ -19,7 +19,7 @@
     <li><a href="https://drive.google.com/drive/u/0/folders/1_3WxPrdAvHeW4ToCLZ63kCvLonZ-sY7a">MY CERTIFICATE</a></li>
     <li><a href="https://www.uit.edu.vn/">MY UNIVERSITY</a></li>
     <li>
-        <a href="">
+        <a href="#">
             CONTACT
             <i class="ti-angle-down"></i>
         </a>
@@ -52,15 +52,15 @@
 <p class="section-sub-heading">Nguyễn Duy Ngọc</p>
 <p class="about-text">I'm Nguyễn Duy Ngọc - A student majoring in computer science at University of Information Technology - Vietnam National University, Ho Chi Minh City.I'm the class monitor of KHCL2021.2. I'm coming from the central region, the son of a family of teachers, loves technology, wants to become a good programmer in the future.</p>
 <div class="member-list">
-    <div class="member-items">
+    <div class="member-item member-items">
         <p class="member-names">Memories</p>
         <img src="./assets/img/personal/couple.jpg" class="member-jpg">
     </div>
-    <div class="member-items">
+    <div class="member-item member-items">
         <p class="member-names">Me</p>
         <img src="./assets/img/personal/Avatar.jpg" class="member-jpg">
     </div>
-    <div class="member-items">
+    <div class="member-item member-items">
         <p class="member-names">Memories</p>
         <img src="./assets/img/personal/s.jpg" class="member-jpg">
     </div>
@@ -79,9 +79,8 @@
         <li>C++<Span class="soldout">5/10</Span></li>
         <li>Front-end<Span class="soldout">4/10</Span></li>
     </ul>
-    <div class="row place-list">
-        <div class="col play-items">
-        <img src="./assets/img/codeing/top-5-trang-web-hoc-lap-trinh-1.jpg" alt="Codelearn" class="play-img">
+        <div class="s-col-full col play-items">
+        <img src="./assets/img/codeing/top-5-trang-web-hoc-lap-trinh-1.jpg" alt="Codelearn" class="play-img" height="165.8px" >
         <div class="place-content ">
             <h3 class="place-heading ">C++</h3>
             <p class="plsy-time">Free</p>
@@ -89,8 +88,8 @@
             <button class="play-buys-btn js-buy-ticket">View</button>
         </div>
         </div>
-        <div class="col play-items">
-            <img src="./assets/img/codeing/free.jpg" alt="Paris" class="play-img">
+        <div class="s-col-full col play-items">
+            <img src="./assets/img/codeing/free.jpg" alt="Paris" class="play-img" height="165.8px">
             <div class="place-content">
                 <h3 class="place-heading">Python</h3>
                 <p class="plsy-time">Free</p>
@@ -98,8 +97,8 @@
                 <button class="play-buys-btn  js-buy-ticket">View</button>
             </div>
             </div>
-        <div class="col play-items">
-                <img src="./assets/img/codeing/f8.jpg" alt="San Francisco" class="play-img">
+        <div class="s-col-full col play-items">
+                <img src="./assets/img/codeing/f8.jpg" alt="San Francisco" class="play-img" height="165.8px">
                 <div class="place-content">
                     <h3 class="place-heading">Web</h3>
                     <p class="plsy-time">Free</p>
@@ -108,7 +107,7 @@
                 </div>
                 </div>    
                 <div class="clear"></div>
-    </div>
+    
     </div>
 </div>
 
@@ -182,12 +181,12 @@
     </div>
 </div>
 <script>
-    var header = document.getElementById('header');
-var menuMobile = document.getElementById('mobile-menu');
+var header = document.getElementById('header');
+var mobileMenu = document.getElementById('mobile-menu');
 var headerHeight = header.clientHeight;
 // Đóng mở menu mobile 
-menuMobile.onclick = function() {
-        var isClose = header.clientHeight === headerHeight
+mobileMenu.onclick = function() {
+        var isClose = header.clientHeight === headerHeight ;
         if (isClose) {
             // đây là thêm css vào dòng code HTML (css inline nên được ưu tiên)
             header.style.height = "auto";
@@ -198,12 +197,18 @@ menuMobile.onclick = function() {
         }
     }
     // Tự động đóng khi chọn Menu
-var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+var menuItems = document.querySelectorAll ( '#nav li a[href*="#"]' );
     // Sử dụng vòng lặp for
 for (var i = 0; i < menuItems.length; i++) {
     var menuItem = menuItems[i];
-    menuItem.onclick = function() {
-        header.style.height = null;
+    menuItem.onclick = function(event) {
+        var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+        if(isParentMenu){
+            event.preventDafault();
+        }
+        else{
+            header.style.height = null;
+        }
     }
 }
 
