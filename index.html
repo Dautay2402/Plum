@@ -157,7 +157,7 @@
 </div>
 
 <div class="map-section">
-    <img src="./assets/img/res.png" width="100%" height="500" alt="map">
+    <img src="./assets/img/ROG-wallpaper-8-bit_3840x1080.jpg" width="100%" height="500" alt="map">
 </div>
 </div>
 
@@ -180,38 +180,6 @@
 </div>   
     </div>
 </div>
-<script>
-var header = document.getElementById('header');
-var mobileMenu = document.getElementById('mobile-menu');
-var headerHeight = header.clientHeight;
-// Đóng mở menu mobile 
-mobileMenu.onclick = function() {
-        var isClose = header.clientHeight === headerHeight ;
-        if (isClose) {
-            // đây là thêm css vào dòng code HTML (css inline nên được ưu tiên)
-            header.style.height = "auto";
-        } else {
-            // có thể dùng 2 cách như dưới, đa số xài null
-            // header.style.height = "46px";
-            header.style.height = null;
-        }
-    }
-    // Tự động đóng khi chọn Menu
-var menuItems = document.querySelectorAll ( '#nav li a[href*="#"]' );
-    // Sử dụng vòng lặp for
-for (var i = 0; i < menuItems.length; i++) {
-    var menuItem = menuItems[i];
-    menuItem.onclick = function(event) {
-        var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
-        if(isParentMenu){
-            event.preventDafault();
-        }
-        else{
-            header.style.height = null;
-        }
-    }
-}
 
-</script>
 </body>
 </html>
